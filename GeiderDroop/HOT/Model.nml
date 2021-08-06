@@ -1,0 +1,44 @@
+&MCMCrun
+   nruns   = 10000,
+   EnsLen  = 100, 
+   NYear   = 10,
+   dtsec   = 120.,      !Timestep in seconds
+   nsave   = 720,       !Number of iterations to save. Save everyday (86400/dtsec); save every hour (3600/dtsec)
+   Readfile= 0,
+   NR_enspar=2,
+   MPIRUN  = 1,
+/
+
+&paramlist
+   params(1) = 3.1,  !mu0  
+   params(2) = 0.8,  !aI0
+   params(3) = 0.1,  !KN
+   params(4) = 0.5,  !Rdn
+   params(5) = 3.5,  !gmax
+   params(6) = 0.15,  !Kp
+   params(7) = 0.05,  !mz
+   params(8) = 5.0,  !wDET
+   params(9) = 4.2,  !ThetaNmax
+   params(10)= 0.01, !Rchl
+   MinValue(1) = 1.1,  !mu0  
+   MinValue(2) = 0.01, !aI0
+   MinValue(3) = 0.001,  !KN
+   MinValue(4) = 0.01,  !Rdn
+   MinValue(5) = 0.5,  !gmax
+   MinValue(6) = 0.01,  !Kp
+   MinValue(7) = 0.01,  !mz
+   MinValue(8) = 0.1,  !wDET
+   MinValue(9) = 3.2,  !Thetamax
+   MinValue(10)= 0.000001,!Rchl
+   MinValue(1) = 1.1,  !mu0  
+   MaxValue(1) = 8.0,  !mu0  
+   MaxValue(2) = 2.0, !aI0
+   MaxValue(3) = 3.0,  !KN
+   MaxValue(4) = 1.4,  !Rdn
+   MaxValue(5) = 5.0,  !gmax
+   MaxValue(6) = 3.0,  !Kp
+   MaxValue(7) = 0.25,  !mz
+   MaxValue(8) = 100.0,  !wDET
+   MaxValue(9) = 5.6,  !ThetaNmax
+   MaxValue(10)= 0.05, !Rchl
+/
