@@ -1,4 +1,4 @@
-Tutorial: The code for optimizing the parameters of the NPZD model at Station ALOHA (DOI: 10.5281/zenodo.895996) is written in Fortran90 with the Intel Fortran compiler (version 2021.1) used. We have tested the codes on a GNU/Linux cluster with x86-64 architechture. The user is supposed to be familiar with the Fortran language and has some basic knowledge of BASH. Below we give some instructions and explanations of the codes and model outputs.
+Tutorial: The code for optimizing the parameters of the NPZD model at Station ALOHA (DOI: 10.5281/zenodo.5168823) is written in Fortran90 with the Intel Fortran compiler (version 2021.1) used. We have tested the codes on a GNU/Linux cluster with x86-64 architechture. The user is supposed to be familiar with the Fortran language and has some basic knowledge of BASH. Below we give some instructions and explanations of the codes and model outputs.
 1) Go to the directory you want to run the model (we assume that the root directory is under home directory: ~/).
 2) To download the codes, type: "git clone https://github.com/BingzhangChen/HOT.git".
 3) Type: "cd GeiderDroop/HOT" to go to the working directory.
